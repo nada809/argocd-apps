@@ -10,7 +10,7 @@ spec:
   project: sample-project
   source:
     path: sample-app/
-    repoURL: https://github.com/nada809/guestbook.git
+    repoURL: https://github.com/nada809/argocd-apps.git
     targetRevision: HEAD
   syncPolicy:
     syncOptions:

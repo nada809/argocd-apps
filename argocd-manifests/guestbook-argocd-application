@@ -10,7 +10,7 @@ spec:
   project: guestbook
   source: 
     path: guestbook
-    repoURL: "https://github.com/nada809/guestbook.git"
+    repoURL: "https://github.com/nada809/argocd-apps.git"
     targetRevision: master
   syncPolicy:
     syncOptions:
