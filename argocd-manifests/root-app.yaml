@@ -12,5 +12,5 @@ spec:
   project: default
   source:
     path: argocd-manifests
-    repoURL: https://github.com/nada809/guestbook.git
+    repoURL: https://github.com/nada809/argocd-apps.git
     targetRevision: HEAD
