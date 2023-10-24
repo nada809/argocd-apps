@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: sample-app
+  name: sample-project
   namespace: argocd
 spec:
   description: Sample app project
