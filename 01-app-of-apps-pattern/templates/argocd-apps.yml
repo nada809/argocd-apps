@@ -15,6 +15,6 @@ spec:
   project: {{ $app.project }}
   source:
     path: {{ $app.path }}
-    repoURL:  {{ $app.repoURL }}
+    repoURL:  {{ .Values.global.source.repoURL }}
     targetRevision: HEAD
 {{- end }}

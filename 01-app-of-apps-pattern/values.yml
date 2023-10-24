@@ -1,15 +1,19 @@
 global:
   destination:
     server: https://kubernetes.default.svc
+  source: 
+      repoURL: "https://github.com/nada809/argocd-apps.git"
 
 applications:
 - name: guestbook-app 
   namespace: guestbook
-  repoURL: "https://github.com/nada809/argocd-apps.git"
+  project: guestbook
   path: 00-application-deployment/guestbook
+  
 - name: sample-app  
   namespace: sample-app
-  repoURL: https://github.com/christianh814/kbe-apps
+  project: sample-project
   path: 00-application-deployment/sample-app
+
   
    

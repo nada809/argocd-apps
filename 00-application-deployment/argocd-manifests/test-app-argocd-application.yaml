@@ -10,7 +10,7 @@ spec:
   project: sample-project
   source:
     path: 00-application-deployment/sample-app
-    repoURL:  https://github.com/christianh814/kbe-apps
+    repoURL: "https://github.com/nada809/argocd-apps.git"
     targetRevision: main
   syncPolicy:
     syncOptions:
