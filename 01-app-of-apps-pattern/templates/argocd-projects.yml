@@ -1,0 +1,25 @@
+{{- range $index, $app := .Values.applications}}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: {{ $app.project }}
+  namespace: argocd
+spec:
+  description:  app project for app of apps
+  sourceRepos:
+  - '*'
+
+  destinations:
+  - namespace: {{ $app.namespace }}
+    server: https://kubernetes.default.svc
+
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
+
+  namespaceResourceWhitelist:
+  - group: '*'
+    kind: '*'
+
+{{- end }}
