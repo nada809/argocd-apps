@@ -4,7 +4,7 @@ metadata:
   labels:
     app: bgd
   name: bgd
-  namespace: test
+  namespace: sample-app
 spec:
   replicas: 1
   selector:
