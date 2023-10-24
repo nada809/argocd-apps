@@ -11,10 +11,10 @@ metadata:
 spec:
   destination: 
     namespace: {{ $app.namespace}}
-    server: {{ .Values.applications.destination.server }}
+    server: {{ .Values.gloabl.destination.server }}
   project: {{ $app.project }}
   source:
-    path: apps/guestbook
+    path: {{ $app.path }}
     repoURL:  {{ $app.repoURL }}
     targetRevision: HEAD
 {{- end }}

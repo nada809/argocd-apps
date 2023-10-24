@@ -5,9 +5,11 @@ global:
 applications:
 - name: guestbook-app 
   namespace: guestbook
-  repoURL:
+  repoURL: "https://github.com/nada809/argocd-apps.git"
+  path: 00-application-deployment/guestbook
 - name: sample-app  
   namespace: sample-app
-  repoURL:
+  repoURL: https://github.com/christianh814/kbe-apps
+  path: 00-application-deployment/sample-app
   
    
