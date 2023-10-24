@@ -10,8 +10,8 @@ spec:
   project: sample-project
   source:
     path: sample-app/
-    repoURL: https://github.com/nada809/argocd-apps.git
-    targetRevision: HEAD
+    repoURL:  https://github.com/christianh814/kbe-apps
+    targetRevision: main
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
