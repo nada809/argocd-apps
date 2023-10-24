@@ -1,0 +1,20 @@
+/*{{- range .Values.applications }}*/
+{{- range $index, $app := .Values.applications}}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: {{ $app.name }}
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination: 
+    namespace: {{ $app.namespace}}
+    server: {{ .Values.applications.destination.server }}
+  project: {{ $app.project }}
+  source:
+    path: apps/guestbook
+    repoURL:  {{ $app.repoURL }}
+    targetRevision: HEAD
+{{- end }}

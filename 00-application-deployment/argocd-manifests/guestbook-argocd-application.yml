@@ -9,7 +9,7 @@ spec:
     server: "https://kubernetes.default.svc"
   project: guestbook
   source: 
-    path: guestbook
+    path: apps/guestbook
     repoURL: "https://github.com/nada809/argocd-apps.git"
     targetRevision: main
   syncPolicy:

@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: sample-project
   source:
-    path: sample-app/
+    path: apps/sample-app
     repoURL:  https://github.com/christianh814/kbe-apps
     targetRevision: main
   syncPolicy:

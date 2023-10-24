@@ -1,0 +1,13 @@
+global:
+  destination:
+    server: https://kubernetes.default.svc
+
+applications:
+- name: guestbook-app 
+  namespace: guestbook
+  repoURL:
+- name: sample-app  
+  namespace: sample-app
+  repoURL:
+  
+   
