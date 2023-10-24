@@ -1,3 +1,13 @@
-# guestbook
-ArgoCD training lab repo :
-In this lab we will use a simple guestbook app, connect this repo to argocd , made changes to the app and sync it with argo UI.
+# ArgoCD example apps deployment
+
+ArgoCD is a powerful deployemnt tool used in k8s and it is quite easy to use and efficient. 
+In this quick demo we will :
+
+* create argoCd applications declaratively
+* use automated sync, auto prune and self healing.
+
+Prerequisites:
+
+* kubernetes cluter running
+* argoCD installed on cluster
+
