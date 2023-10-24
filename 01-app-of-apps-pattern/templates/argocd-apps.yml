@@ -1,4 +1,3 @@
-/*{{- range .Values.applications }}*/
 {{- range $index, $app := .Values.applications}}
 ---
 apiVersion: argoproj.io/v1alpha1
@@ -11,10 +10,10 @@ metadata:
 spec:
   destination: 
     namespace: {{ $app.namespace}}
-    server: {{ .Values.gloabl.destination.server }}
+    server: {{ default $.Values.global.destination.server }}
   project: {{ $app.project }}
   source:
     path: {{ $app.path }}
-    repoURL:  {{ .Values.global.source.repoURL }}
+    repoURL:  {{ default $.Values.global.source.repoURL }}
     targetRevision: HEAD
 {{- end }}
